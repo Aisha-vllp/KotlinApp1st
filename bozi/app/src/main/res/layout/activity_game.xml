@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#042E7B"
+    android:padding="16dp">
+
+    <!-- Верхняя панель с суммой -->
+    <TextView
+        android:id="@+id/tvPrize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:background="@drawable/prize_background"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Вопрос -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Какое любимое блюдо у Гарфилда?"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/tvPrize"
+        android:layout_marginTop="32dp"
+        android:padding="16dp" />
+
+    <!-- Кнопки ответов -->
+    <LinearLayout
+        android:id="@+id/answersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuestion"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/answer_button_bg"
+            android:text="A: Ответ"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/answer_button_bg"
+            android:text="B: Ответ"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/answer_button_bg"
+            android:text="C: Ответ"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+
+        <Button
+        android:id="@+id/btnD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/answer_button_bg"
+        android:text="D: Ответ"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    </LinearLayout>
+
+    <!-- Панель подсказок -->
+    <LinearLayout
+        android:id="@+id/helpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answersLayout"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/btnFifty"
+            style="@style/HelpButtonStyle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_fifty" />
+
+        <ImageButton
+            android:id="@+id/btnAudience"
+            android:scaleType="centerInside"
+            style="@style/HelpButtonStyle"
+            android:src="@drawable/ic_audience" />
+
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:scaleType="centerInside"
+            style="@style/HelpButtonStyle"
+            android:src="@drawable/ic_call" />
+
+        <ImageButton
+            android:id="@+id/btnChange"
+            android:scaleType="centerInside"
+            style="@style/HelpButtonStyle"
+            android:src="@drawable/ic_change" />
+    </LinearLayout>
+
+    <!-- Реклама Яндекс -->
+    <com.yandex.mobile.ads.banner.BannerAdView
+        android:id="@+id/bannerAdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp" />
+
+</RelativeLayout>

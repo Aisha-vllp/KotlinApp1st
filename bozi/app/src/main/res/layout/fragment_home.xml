@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5EFFA"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_bg"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Челлендж Бриллианта"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iconDiamond"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_diamond1" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginTop="12dp"
+                android:progress="0"
+                android:max="1000"
+                android:progressDrawable="@android:drawable/progress_horizontal" />
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/1000"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_below="@id/progressBar"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+
+
+
+        <!-- Кнопка 1 — Легкие вопросы -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_easy"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/overlay_easy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Легкие вопросы"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:id="@+id/easyCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Продолжить >"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <!-- Кнопка 2 — Обычные вопросы -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_normal"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/overlay_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Обычные вопросы"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:id="@+id/normalCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Продолжить >"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+        <!-- Кнопка 3 — Сложные вопросы -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_hard"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/overlay_hard" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сложные вопросы"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:id="@+id/hardCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Продолжить >"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+</ScrollView>

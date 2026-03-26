@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <!-- Фон квадрата -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M0,0h128v128h-128z" />
+
+    <!-- Блоки тетриса -->
+    <path
+        android:fillColor="#FFCDD2"
+        android:pathData="M16,16h32v32h-32z" />
+
+    <path
+        android:fillColor="#E57373"
+        android:pathData="M48,16h32v32h-32z" />
+
+    <path
+        android:fillColor="#B71C1C"
+        android:pathData="M80,16h32v32h-32z" />
+
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M16,48h32v32h-32z" />
+
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M48,48h32v32h-32z" />
+
+    <path
+        android:fillColor="#880E4F"
+        android:pathData="M80,48h32v32h-32z" />
+
+    <!-- Нижний блок -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M48,80h32v32h-32z" />
+</vector>

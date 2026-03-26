@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvTitle" type="id" />
+    <item name="tvProgress" type="id" />
+    <item name="btnEasy" type="id" />
+    <item name="btnNormal" type="id" />
+    <item name="btnHard" type="id" />
+    <item name="fragment_container" type="id" />
+</resources>

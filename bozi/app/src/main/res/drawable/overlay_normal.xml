@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Жёлтый градиент -->
+    <gradient
+        android:startColor="#99FFC107"
+        android:endColor="#00FFC107"
+        android:angle="270" />
+
+</shape>

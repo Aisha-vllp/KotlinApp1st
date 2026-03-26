@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#4CAF50" /> <!-- Зеленый -->
+            <stroke android:width="2dp" android:color="#388E3C" /> <!-- Темно-зеленая рамка -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</selector>

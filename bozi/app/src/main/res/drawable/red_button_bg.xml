@@ -1,0 +1,19 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Градиент от светло-красного к тёмно-красному -->
+    <gradient
+        android:startColor="#FF5252"
+        android:endColor="#D32F2F"
+        android:angle="270" />
+
+    <!-- Скругление углов -->
+    <corners android:radius="12dp" />
+
+    <!-- Внутренние отступы -->
+    <padding
+        android:left="12dp"
+        android:top="12dp"
+        android:right="12dp"
+        android:bottom="12dp" />
+</shape>
